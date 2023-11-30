@@ -1,0 +1,35 @@
+package service;
+
+import data.Teacher;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class TeacherService implements UserService<Teacher> {
+
+    private final List<Teacher> teachers;
+
+    public TeacherService() {
+        this.teachers = new ArrayList<>();
+    }
+
+    @Override
+    public List<Teacher> getAll() {
+        return teachers;
+    }
+
+    @Override
+    public void create(String firstName, String lastName, String patronymic, LocalDate dateOfBirth) {
+        long maxId = 0;
+        for (Teacher teacher : teachers) {
+            if (teacher.getTeacherId() > maxId) {
+                maxId = teacher.getTeacherId();
+            }
+        }
+        maxId++;
+
+        Teacher teacher = new Teacher(firstName, lastName, patronymic, dateOfBirth, maxId);
+        teachers.add(teacher);
+    }
+}

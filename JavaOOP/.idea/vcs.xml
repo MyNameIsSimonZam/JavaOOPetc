@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Help (справочник по ООП, сделанный одним из студентов)/together" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OOPSeminar3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OOPSeminar4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OOPSeminar6" vcs="Git" />
+  </component>
+</project>
